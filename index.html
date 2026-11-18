@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saath Health: Business Plan and Financial Model</title>
+<meta name="description" content="Startup business plan and financial model for Saath Health, a chronic-care subscription platform for Tier-2 and Tier-3 India.">
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#111;background:#fff;margin:0;line-height:1.6;font-size:17px}
+main{max-width:780px;margin:0 auto;padding:48px 22px 80px}
+h1{font-weight:700;font-size:34px;line-height:1.2;margin:0 0 8px;color:#111}
+h2{font-weight:700;font-size:24px;line-height:1.25;margin:48px 0 12px;padding-top:8px;color:#111}
+h3{font-weight:700;font-size:18px;margin:28px 0 8px;color:#111}
+p{margin:0 0 14px}
+.meta{color:#444;font-size:15px;margin:0 0 6px}
+.by{font-size:15px;color:#444;margin:0 0 20px}
+.note{font-size:15px;color:#555}
+ul,ol{margin:0 0 14px;padding-left:24px}li{margin-bottom:6px}
+a{color:#1d4ed8;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:#1e3a8a}
+.toc{display:flex;flex-wrap:wrap;gap:4px 18px;margin:20px 0 8px;padding:12px 18px;border:1px solid #ccc;font-size:15px}
+.toc a{text-decoration:underline}
+.toc+h2{margin-top:40px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px;margin:22px 0 26px}
+.kpi{border-top:2px solid #111;padding-top:10px}
+.kpi .v{font-size:28px;font-weight:700;line-height:1.15;color:#111}
+.kpi .l{font-size:14px;color:#555;margin-top:2px}
+.scroll{overflow-x:auto;margin:10px 0 22px;border-top:1px solid #999;border-bottom:1px solid #999}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:480px}
+th,td{border-bottom:1px solid #e2e2e2;padding:8px 12px;text-align:left;vertical-align:top}
+th{color:#111;font-weight:600;border-bottom:1px solid #999}
+tr:last-child td{border-bottom:none}
+td.r,th.r{text-align:right;white-space:nowrap}
+td.neg{color:#c81e3c}
+td b{color:#111}
+figure{margin:20px 0 28px;background:#fafafa;border:1px solid #e3e3e3;border-radius:4px;padding:18px 18px 12px}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:14px;color:#555;margin-top:8px}
+.box{border-left:3px solid #999;padding:4px 0 4px 16px;margin:0 0 20px}
+.box p{margin:0}.box b{color:#111}
+@media print{.toc{display:none}main{padding:0}figure,table,.kpi{break-inside:avoid}}
+</style></head><body><main>
+<header>
+<h1>Saath Health: Business Plan and Financial Model</h1>
+<p class="meta">A startup idea and plan I am working on. &ldquo;Saath Health&rdquo; is the working name.</p>
+<p class="by">Ashpreet Kaur</p>
+</header>
+<nav class="toc" aria-label="Contents"><b>Contents:</b>
+<a href="#summary">1 Summary</a><a href="#market">2 Market</a><a href="#solution">3 Solution</a><a href="#economics">4 Revenue and unit economics</a><a href="#gtm">5 Go-to-market</a><a href="#ops">6 Operations</a><a href="#assumptions">7 Model assumptions</a><a href="#financials">8 Financial projections</a><a href="#scenarios">9 Scenarios</a><a href="#funding">10 Funding</a><a href="#risks">11 Risks</a><a href="#sources">12 Sources</a></nav>
+
+<h2 id="summary">1. Executive summary</h2>
+<p>Saath Health is a vernacular, subscription-based care platform for people with diabetes and hypertension in Tier-2 and Tier-3 India. The plan asks for ₹30 crore in two rounds (₹6 crore seed, ₹24 crore Series A). In the base case the business reaches EBITDA breakeven in month 40 and ₹137.5 crore of revenue in year 5.</p>
+<p>A member pays about ₹450 a month for a health coach who speaks their language, doctor consults, a subsidised BP and glucose kit, home diagnostics and generic medicines delivered monthly. Employers and insurers pay a lower fee for the same programme.</p>
+<div class="kpis"><div class="kpi"><div class="v c1">₹137.5 cr</div><div class="l">Year-5 revenue</div></div><div class="kpi"><div class="v c2">Month 40</div><div class="l">First EBITDA-positive month</div></div><div class="kpi"><div class="v c3">3.7x</div><div class="l">Year-5 LTV/CAC (year 1: 1.7x)</div></div><div class="kpi"><div class="v c4">₹30 cr</div><div class="l">Raise: seed plus Series A</div></div></div>
+<div class="scroll"><table class=""><thead><tr><th>Base case, ₹ crore</th><th class=r>Year 1</th><th class=r>Year 3</th><th class=r>Year 5</th></tr></thead><tbody>
+<tr><td>Revenue</td><td class="r">2.3</td><td class="r">38.7</td><td class="r">137.5</td></tr>
+<tr><td>EBITDA</td><td class="r neg">(3.8)</td><td class="r neg">(4.7)</td><td class="r">20.6</td></tr>
+<tr><td>Paid B2C members, year end</td><td class="r">8,684</td><td class="r">77,621</td><td class="r">235,370</td></tr>
+<tr><td>Year-end annualised revenue (ARR)</td><td class="r">5.5</td><td class="r">54.6</td><td class="r">168.4</td></tr>
+</tbody></table></div>
+<div class="box"><p><b>Weak spot:</b> year-1 LTV/CAC is only 1.7x and improves to 3.7x by year 5 as monthly churn falls from 6.0% to 3.3%. Every number comes from the financial model, and every driver is an assumption to be tested in a pilot, not an observed result.</p></div>
+<h2 id="market">2. Problem and market opportunity</h2>
+<p>India has the world's largest pool of people who need continuous chronic care but get episodic, expensive, mostly English-language treatment. Diabetes and hypertension need monthly monitoring, adherence support and periodic tests, which an occasional OPD visit does not deliver, and specialists are scarce outside metros.</p>
+<div class="scroll"><table class=""><thead><tr><th>Indicator</th><th>Figure</th><th>Source</th></tr></thead><tbody>
+<tr><td>Chronic disease market (TAM)</td><td>USD 40 bn of a USD 167 bn healthcare market</td><td><a href="https://www.cxotoday.com/press-release/digital-disease-management-to-solve-indias-chronic-health-crisis-redseer/">Redseer via CXOToday</a></td></tr>
+<tr><td>Urban chronic-care OPD market</td><td>USD 17 bn</td><td><a href="https://www.cxotoday.com/press-release/digital-disease-management-to-solve-indias-chronic-health-crisis-redseer/">Redseer via CXOToday</a></td></tr>
+<tr><td>Patients on hypertension or diabetes treatment (National NCD Portal, 2025)</td><td>8.64 crore</td><td><a href="https://www.kenresearch.com/india-digital-therapeutics-market">Ken Research</a></td></tr>
+<tr><td>India telehealth market, 2025</td><td>USD 911.9 million, growing about 22% a year to 2034</td><td><a href="https://www.imarcgroup.com/india-telehealth-market">IMARC</a></td></tr>
+</tbody></table></div>
+<p>The serviceable market is the paying slice of the 8.64 crore on treatment who live outside the top metros, can afford about ₹450 a month and own a smartphone. The plan reaches 235,370 paid members by year 5, about 0.3% of the people already on treatment, so it does not depend on market growth.</p>
+<p class="note">These figures come from search-result summaries of the reports, not the full reports. Market-size estimates from different research firms also vary widely, so check the originals before relying on them.</p>
+<h2 id="solution">3. Solution and product</h2>
+<p>Saath is a monthly care loop, not a one-off consultation: the member measures, the coach nudges, the doctor adjusts, the pharmacy delivers, and the next reading shows whether it worked.</p>
+<figure><svg viewBox="0 0 700 120" role="img" aria-label="The monthly care loop" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<rect x="10.0" y="14" width="116.8" height="92" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="8"/>
+<text x="68.4" y="44" font-size="15" font-weight="700" text-anchor="middle" fill="#1a1a1a">1. Onboard</text>
+<text x="68.4" y="68" font-size="12" text-anchor="middle" fill="#1a1a1a">BP + glucose kit</text>
+<text x="68.4" y="84" font-size="12" text-anchor="middle" fill="#1a1a1a">coach call</text>
+<line x1="128.8" y1="60" x2="148.8" y2="60" stroke="#2563eb" stroke-width="1.5"/>
+<polygon points="148.8,60 141.8,56 141.8,64" fill="#2563eb"/>
+<rect x="150.8" y="14" width="116.8" height="92" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="8"/>
+<text x="209.2" y="44" font-size="15" font-weight="700" text-anchor="middle" fill="#1a1a1a">2. Monitor</text>
+<text x="209.2" y="68" font-size="12" text-anchor="middle" fill="#1a1a1a">app or WhatsApp</text>
+<text x="209.2" y="84" font-size="12" text-anchor="middle" fill="#1a1a1a">AI flags values</text>
+<line x1="269.6" y1="60" x2="289.6" y2="60" stroke="#2563eb" stroke-width="1.5"/>
+<polygon points="289.6,60 282.6,56 282.6,64" fill="#2563eb"/>
+<rect x="291.6" y="14" width="116.8" height="92" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="8"/>
+<text x="350.0" y="44" font-size="15" font-weight="700" text-anchor="middle" fill="#1a1a1a">3. Coach</text>
+<text x="350.0" y="68" font-size="12" text-anchor="middle" fill="#1a1a1a">1 coach : 300</text>
+<text x="350.0" y="84" font-size="12" text-anchor="middle" fill="#1a1a1a">members</text>
+<line x1="410.4" y1="60" x2="430.4" y2="60" stroke="#2563eb" stroke-width="1.5"/>
+<polygon points="430.4,60 423.4,56 423.4,64" fill="#2563eb"/>
+<rect x="432.4" y="14" width="116.8" height="92" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="8"/>
+<text x="490.8" y="44" font-size="15" font-weight="700" text-anchor="middle" fill="#1a1a1a">4. Consult</text>
+<text x="490.8" y="68" font-size="12" text-anchor="middle" fill="#1a1a1a">doctor about</text>
+<text x="490.8" y="84" font-size="12" text-anchor="middle" fill="#1a1a1a">every 3 months</text>
+<line x1="551.2" y1="60" x2="571.2" y2="60" stroke="#2563eb" stroke-width="1.5"/>
+<polygon points="571.2,60 564.2,56 564.2,64" fill="#2563eb"/>
+<rect x="573.2" y="14" width="116.8" height="92" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="8"/>
+<text x="631.6" y="44" font-size="15" font-weight="700" text-anchor="middle" fill="#1a1a1a">5. Fulfil</text>
+<text x="631.6" y="68" font-size="12" text-anchor="middle" fill="#1a1a1a">generic medicines</text>
+<text x="631.6" y="84" font-size="12" text-anchor="middle" fill="#1a1a1a">+ quarterly test</text>
+</svg><figcaption>Figure 1. The care loop. After fulfilment, the next readings feed the monitoring step again.</figcaption></figure>
+<div class="scroll"><table class=""><thead><tr><th>Plan</th><th>Price per month</th><th>What it includes</th></tr></thead><tbody>
+<tr><td>Coaching</td><td>₹299</td><td>Vernacular health coaching and monitoring</td></tr>
+<tr><td>Standard</td><td>₹499</td><td>Coaching plus doctor consults and the subsidised device kit</td></tr>
+<tr><td>Family</td><td>₹899</td><td>Standard plan for a household</td></tr>
+<tr><td>Employer / insurer programme</td><td>₹300 per member</td><td>Same programme with fewer coach touches, paid by the employer or insurer</td></tr>
+</tbody></table></div>
+<p>The three consumer plans are blended at about ₹450 a month in the model. Languages at launch: Hindi, Punjabi and English.</p>
+<h2 id="economics">4. Revenue streams and unit economics</h2>
+<p>A paid member generates ₹564 a month and ₹321 of contribution (57%). Medicine and diagnostics are booked at net margin after drug and lab cost, which keeps revenue conservative.</p>
+<div class="scroll"><table class=""><thead><tr><th>Stream</th><th>Basis</th><th class=r>₹ per member per month</th><th class=r>Share of year-5 revenue</th></tr></thead><tbody>
+<tr><td>Subscription</td><td>Blended plan price</td><td class="r">450.0</td><td class="r">74%</td></tr>
+<tr><td>Medicine margin</td><td>₹700 basket × 55% attach × 18% margin</td><td class="r">69.3</td><td class="r">11%</td></tr>
+<tr><td>Diagnostics margin</td><td>₹250 spend × 60% attach × 30% margin</td><td class="r">45.0</td><td class="r">7%</td></tr>
+<tr><td>Employer / insurer programme</td><td>₹300 per member, starts month 13</td><td class="r">n/a (B2B)</td><td class="r">7%</td></tr>
+</tbody></table></div>
+<figure><svg viewBox="0 0 700 330" role="img" aria-label="Monthly revenue and contribution per paid member" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<line x1="50" x2="690" y1="272.0" y2="272.0" stroke="#e2e2e2"/>
+<text x="42" y="276.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="50" x2="690" y1="189.3" y2="189.3" stroke="#e2e2e2"/>
+<text x="42" y="193.3" font-size="11" text-anchor="end" fill="#555555">200</text>
+<line x1="50" x2="690" y1="106.7" y2="106.7" stroke="#e2e2e2"/>
+<text x="42" y="110.7" font-size="11" text-anchor="end" fill="#555555">400</text>
+<line x1="50" x2="690" y1="24.0" y2="24.0" stroke="#e2e2e2"/>
+<text x="42" y="28.0" font-size="11" text-anchor="end" fill="#555555">600</text>
+<rect x="62.2" y="86.0" width="39.7" height="186.0" fill="#0d9488" rx="2"/>
+<text x="82.0" y="81.0" font-size="11" text-anchor="middle" fill="#1a1a1a">450</text>
+<text x="82.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Subscription</text>
+<rect x="126.2" y="57.4" width="39.7" height="28.6" fill="#0d9488" rx="2"/>
+<text x="146.0" y="52.4" font-size="11" text-anchor="middle" fill="#1a1a1a">69</text>
+<text x="146.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Medicine</text>
+<rect x="190.2" y="38.8" width="39.7" height="18.6" fill="#0d9488" rx="2"/>
+<text x="210.0" y="33.8" font-size="11" text-anchor="middle" fill="#1a1a1a">45</text>
+<text x="210.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Diagnostics</text>
+<rect x="254.2" y="38.8" width="39.7" height="233.2" fill="#2563eb" rx="2"/>
+<text x="274.0" y="33.8" font-size="11" text-anchor="middle" fill="#1a1a1a">564</text>
+<text x="274.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Revenue</text>
+<rect x="318.2" y="38.8" width="39.7" height="40.9" fill="#e11d48" rx="2"/>
+<text x="338.0" y="33.8" font-size="11" text-anchor="middle" fill="#1a1a1a">−99</text>
+<text x="338.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Consults</text>
+<rect x="382.2" y="79.7" width="39.7" height="37.2" fill="#e11d48" rx="2"/>
+<text x="402.0" y="74.7" font-size="11" text-anchor="middle" fill="#1a1a1a">−90</text>
+<text x="402.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Coach</text>
+<rect x="446.2" y="116.9" width="39.7" height="10.3" fill="#e11d48" rx="2"/>
+<text x="466.0" y="111.9" font-size="11" text-anchor="middle" fill="#1a1a1a">−25</text>
+<text x="466.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Cloud / AI</text>
+<rect x="510.2" y="127.2" width="39.7" height="8.3" fill="#e11d48" rx="2"/>
+<text x="530.0" y="122.2" font-size="11" text-anchor="middle" fill="#1a1a1a">−20</text>
+<text x="530.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Support</text>
+<rect x="574.2" y="135.5" width="39.7" height="3.7" fill="#e11d48" rx="2"/>
+<text x="594.0" y="130.5" font-size="11" text-anchor="middle" fill="#1a1a1a">−9</text>
+<text x="594.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Payments</text>
+<rect x="638.2" y="139.2" width="39.7" height="132.8" fill="#2563eb" rx="2"/>
+<text x="658.0" y="134.2" font-size="11" text-anchor="middle" fill="#1a1a1a">321</text>
+<text x="658.0" y="288" font-size="11" text-anchor="middle" fill="#1a1a1a">Contribution</text>
+<line x1="50" x2="690" y1="272.0" y2="272.0" stroke="#8a8a8a"/>
+</svg><figcaption>Figure 2. Monthly economics of one paid B2C member, ₹. Contribution is ₹321 (57% of revenue) before acquisition and fixed costs.</figcaption></figure>
+<div class="scroll"><table class=""><thead><tr><th>Per paid B2C member</th><th class=r>Year 1</th><th class=r>Year 2</th><th class=r>Year 3</th><th class=r>Year 4</th><th class=r>Year 5</th></tr></thead><tbody>
+<tr><td>Monthly churn</td><td class="r">6.0%</td><td class="r">5.0%</td><td class="r">4.2%</td><td class="r">3.7%</td><td class="r">3.3%</td></tr>
+<tr><td>Expected lifetime (months)</td><td class="r">16.7</td><td class="r">20.0</td><td class="r">23.8</td><td class="r">27.0</td><td class="r">30.3</td></tr>
+<tr><td>Marketing CAC (₹)</td><td class="r">2,000</td><td class="r">1,800</td><td class="r">1,600</td><td class="r">1,500</td><td class="r">1,400</td></tr>
+<tr><td>Fully loaded CAC incl. ₹1,200 device kit (₹)</td><td class="r">3,200</td><td class="r">3,000</td><td class="r">2,800</td><td class="r">2,700</td><td class="r">2,600</td></tr>
+<tr><td>Undiscounted LTV (₹)</td><td class="r">5,355</td><td class="r">6,426</td><td class="r">7,650</td><td class="r">8,684</td><td class="r">9,736</td></tr>
+<tr><td>LTV (₹), lifetime capped at 36 months</td><td class="r">4,778</td><td class="r">5,412</td><td class="r">6,018</td><td class="r">6,449</td><td class="r">6,827</td></tr>
+<tr><td>LTV / CAC, undiscounted</td><td class="r">1.7x</td><td class="r">2.1x</td><td class="r">2.7x</td><td class="r">3.2x</td><td class="r">3.7x</td></tr>
+<tr><td>LTV / CAC, 36-month cap</td><td class="r">1.5x</td><td class="r">1.8x</td><td class="r">2.1x</td><td class="r">2.4x</td><td class="r">2.6x</td></tr>
+<tr><td>CAC payback (months)</td><td class="r">10.0</td><td class="r">9.3</td><td class="r">8.7</td><td class="r">8.4</td><td class="r">8.1</td></tr>
+</tbody></table></div>
+<figure><svg viewBox="0 0 680 300" role="img" aria-label="LTV to CAC ratio by year" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<rect x="58" y="10" width="12" height="12" fill="#2563eb" rx="2"/>
+<text x="75" y="20" font-size="12" fill="#1a1a1a">Undiscounted</text>
+<rect x="165.2" y="10" width="12" height="12" fill="#0d9488" rx="2"/>
+<text x="182.2" y="20" font-size="12" fill="#1a1a1a">36-month cap</text>
+<line x1="58" x2="666" y1="260.0" y2="260.0" stroke="#e2e2e2"/>
+<text x="50" y="264.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="205.0" y2="205.0" stroke="#e2e2e2"/>
+<text x="50" y="209.0" font-size="11" text-anchor="end" fill="#555555">1</text>
+<line x1="58" x2="666" y1="150.0" y2="150.0" stroke="#e2e2e2"/>
+<text x="50" y="154.0" font-size="11" text-anchor="end" fill="#555555">2</text>
+<line x1="58" x2="666" y1="95.0" y2="95.0" stroke="#e2e2e2"/>
+<text x="50" y="99.0" font-size="11" text-anchor="end" fill="#555555">3</text>
+<line x1="58" x2="666" y1="40.0" y2="40.0" stroke="#e2e2e2"/>
+<text x="50" y="44.0" font-size="11" text-anchor="end" fill="#555555">4</text>
+<line x1="58" x2="666" y1="260.0" y2="260.0" stroke="#8a8a8a"/>
+<text x="118.8" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y1</text>
+<rect x="75.0" y="168.0" width="41.8" height="92.0" fill="#2563eb" rx="2"/>
+<text x="95.9" y="163.0" font-size="11" text-anchor="middle" fill="#1a1a1a">1.7x</text>
+<rect x="118.8" y="177.9" width="41.8" height="82.1" fill="#0d9488" rx="2"/>
+<text x="139.7" y="172.9" font-size="11" text-anchor="middle" fill="#1a1a1a">1.5x</text>
+<text x="240.4" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y2</text>
+<rect x="196.6" y="142.2" width="41.8" height="117.8" fill="#2563eb" rx="2"/>
+<text x="217.5" y="137.2" font-size="11" text-anchor="middle" fill="#1a1a1a">2.1x</text>
+<rect x="240.4" y="160.8" width="41.8" height="99.2" fill="#0d9488" rx="2"/>
+<text x="261.3" y="155.8" font-size="11" text-anchor="middle" fill="#1a1a1a">1.8x</text>
+<text x="362.0" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y3</text>
+<rect x="318.2" y="109.7" width="41.8" height="150.3" fill="#2563eb" rx="2"/>
+<text x="339.1" y="104.7" font-size="11" text-anchor="middle" fill="#1a1a1a">2.7x</text>
+<rect x="362.0" y="141.8" width="41.8" height="118.2" fill="#0d9488" rx="2"/>
+<text x="382.9" y="136.8" font-size="11" text-anchor="middle" fill="#1a1a1a">2.1x</text>
+<text x="483.6" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y4</text>
+<rect x="439.8" y="83.1" width="41.8" height="176.9" fill="#2563eb" rx="2"/>
+<text x="460.7" y="78.1" font-size="11" text-anchor="middle" fill="#1a1a1a">3.2x</text>
+<rect x="483.6" y="128.6" width="41.8" height="131.4" fill="#0d9488" rx="2"/>
+<text x="504.5" y="123.6" font-size="11" text-anchor="middle" fill="#1a1a1a">2.4x</text>
+<text x="605.2" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y5</text>
+<rect x="561.4" y="54.0" width="41.8" height="206.0" fill="#2563eb" rx="2"/>
+<text x="582.3" y="49.0" font-size="11" text-anchor="middle" fill="#1a1a1a">3.7x</text>
+<rect x="605.2" y="115.6" width="41.8" height="144.4" fill="#0d9488" rx="2"/>
+<text x="626.1" y="110.6" font-size="11" text-anchor="middle" fill="#1a1a1a">2.6x</text>
+<line x1="58" x2="666" y1="95.0" y2="95.0" stroke="#d97706" stroke-dasharray="5 4"/>
+<text x="64" y="90.0" font-size="11" text-anchor="start" fill="#b45309">3x rule of thumb</text>
+</svg><figcaption>Figure 3. LTV/CAC by year. Only the undiscounted measure crosses 3x, and only from year 4.</figcaption></figure>
+<h3>Employer and insurer members</h3>
+<div class="scroll"><table class=""><thead><tr><th>Employer / insurer member</th><th class=r>Value</th></tr></thead><tbody>
+<tr><td>Fee per month</td><td class="r">₹300</td></tr>
+<tr><td>Cost to serve per month</td><td class="r">₹140</td></tr>
+<tr><td>Contribution per month</td><td class="r">₹160</td></tr>
+<tr><td>Monthly churn</td><td class="r">1.5%</td></tr>
+<tr><td>Expected lifetime</td><td class="r">67 months</td></tr>
+<tr><td>Lifetime value</td><td class="r">₹10,667</td></tr>
+<tr><td>Acquisition cost</td><td class="r">₹250</td></tr>
+<tr><td>LTV / CAC</td><td class="r">42.7x</td></tr>
+</tbody></table></div>
+<p class="note">The B2B figures are very high because they assume contracts that have not been won, and B2B is only 7% of year-5 revenue.</p>
+<h2 id="gtm">5. Go-to-market and competition</h2>
+<p>Launch in the Chandigarh tricity, Punjab and Haryana, where trust is built through local pharmacies, clinics and community health camps rather than ads alone, then expand city by city.</p>
+<div class="scroll"><table class=""><thead><tr><th>Phase</th><th>Months</th><th>Plan</th><th>Marketing CAC</th></tr></thead><tbody>
+<tr><td>1. Pilot</td><td>1-12</td><td>6-8 towns; 400 new members in month 1, growing 14% a month; camps, pharmacy partners, referrals</td><td>₹2,000</td></tr>
+<tr><td>2. Expand</td><td>13-36</td><td>Employer and insurer channel (300 new members in its first month, growing 4% a month); more states</td><td>₹1,800 falling to ₹1,600</td></tr>
+<tr><td>3. Scale</td><td>37-60</td><td>Growth shifts to referrals and brand</td><td>₹1,400</td></tr>
+</tbody></table></div>
+<div class="scroll"><table class=""><thead><tr><th>Competitor</th><th>What the sources say</th></tr></thead><tbody>
+<tr><td>Truemeds</td><td>Raised USD 85 million Series C in August 2025; chronic-care e-pharmacy and telehealth (<a href="https://www.freepressjournal.in/amp/latest-news/indias-e-pharmacy-sector-expands-as-patients-shift-to-affordable-value-driven-medicines">Free Press Journal</a>)</td></tr>
+<tr><td>Disha (formerly Curelink)</td><td>Raised USD 4.6 million Series A led by General Catalyst; vernacular AI chronic care (<a href="https://dealroom.co/news/154020-disha-formerly-curelink-raises-4-6m-series-a-led-by-general-catalyst/">Dealroom</a>)</td></tr>
+<tr><td>Practo</td><td>Launched chronic tele-monitoring programmes for diabetes and hypertension in 2025 (<a href="https://www.thereportcubes.com/public/report-store/telemedicine-market-india">Report Cubes</a>)</td></tr>
+<tr><td>Apollo 24x7</td><td>Expanded AI-enabled virtual consultation across several states in 2025 (same source)</td></tr>
+</tbody></table></div>
+<p>The edge has to come from depth in one region and one care loop: local-language coaching, one human coach per 300 members, and pharmacy partnerships in smaller towns. Large platforms can copy features, so retention (churn below 4% a month by year 3) is what must be proven.</p>
+<h2 id="ops">6. Operations, clinical governance and regulation</h2>
+<div class="scroll"><table class=""><thead><tr><th>Area</th><th>Approach</th></tr></thead><tbody>
+<tr><td>Clinical protocols</td><td>A clinical lead writes treatment-escalation rules; the AI only flags readings and drafts messages; a registered doctor makes every prescribing decision</td></tr>
+<tr><td>Doctors</td><td>Empanelled tele-consult doctors paid per consult (₹300 in the model), under India's telemedicine practice guidelines</td></tr>
+<tr><td>Pharmacy and labs</td><td>Licensed pharmacy partners and accredited partner labs, so inventory and lab capex stay off the balance sheet</td></tr>
+<tr><td>Data</td><td>Health data is sensitive; consent-first collection and alignment with India's digital health data rules; legal review before launch</td></tr>
+<tr><td>Team</td><td>Fixed opex starts at ₹14 lakh a month (about 12 people across product, clinical, operations and finance) and reaches ₹1.2 crore a month by year 5</td></tr>
+</tbody></table></div>
+<p class="note">Regulatory points here are the author's understanding, not legal advice. Confirm telemedicine, e-pharmacy and data-protection requirements with a healthcare lawyer.</p>
+<h2 id="assumptions">7. Model assumptions</h2>
+<p>The model is a 60-month build: it rolls subscribers forward each month (opening + new − churned), prices each stream, subtracts variable and acquisition costs, and tracks cash against the funding rounds. Every input below is an assumption made by the author, not an observed figure.</p>
+<h3>Revenue per member</h3>
+<div class="scroll"><table class=""><thead><tr><th>Input</th><th>Value</th></tr></thead><tbody>
+<tr><td>Blended subscription price</td><td>₹450 a month</td></tr>
+<tr><td>Medicine basket per member</td><td>₹700 a month, 55% attach, 18% net margin</td></tr>
+<tr><td>Diagnostics spend per member</td><td>₹250 a month, 60% attach, 30% net margin</td></tr>
+</tbody></table></div>
+<h3>Cost to serve per member</h3>
+<div class="scroll"><table class=""><thead><tr><th>Input</th><th>Value</th></tr></thead><tbody>
+<tr><td>Doctor consult</td><td>₹300, 0.33 consults a month</td></tr>
+<tr><td>Health coach</td><td>₹27,000 a month salary, 300 members each (₹90 per member)</td></tr>
+<tr><td>Cloud, AI and SMS</td><td>₹25 a month</td></tr>
+<tr><td>Payment gateway</td><td>2% of subscription revenue</td></tr>
+<tr><td>Support and operations</td><td>₹20 a month</td></tr>
+<tr><td>Device kit per new member</td><td>₹1,200 one-off (BP monitor + glucometer)</td></tr>
+</tbody></table></div>
+<h3>Year-wise inputs</h3>
+<div class="scroll"><table class=""><thead><tr><th>Input</th><th class=r>Year 1</th><th class=r>Year 2</th><th class=r>Year 3</th><th class=r>Year 4</th><th class=r>Year 5</th></tr></thead><tbody>
+<tr><td>Marketing CAC (₹)</td><td class="r">2,000</td><td class="r">1,800</td><td class="r">1,600</td><td class="r">1,500</td><td class="r">1,400</td></tr>
+<tr><td>Monthly churn</td><td class="r">6.0%</td><td class="r">5.0%</td><td class="r">4.2%</td><td class="r">3.7%</td><td class="r">3.3%</td></tr>
+<tr><td>Month-on-month growth in new members</td><td class="r">14.0%</td><td class="r">8.0%</td><td class="r">5.0%</td><td class="r">3.5%</td><td class="r">2.5%</td></tr>
+<tr><td>Fixed opex per month (₹ lakh)</td><td class="r">14</td><td class="r">30</td><td class="r">55</td><td class="r">85</td><td class="r">120</td></tr>
+</tbody></table></div>
+<h3>Other inputs</h3>
+<div class="scroll"><table class=""><thead><tr><th>Input</th><th>Value</th></tr></thead><tbody>
+<tr><td>New B2C members in month 1</td><td>400</td></tr>
+<tr><td>Employer / insurer channel starts</td><td>Month 13, 300 new members, growing 4% a month</td></tr>
+<tr><td>Employer / insurer economics</td><td>₹300 fee, ₹140 cost to serve, 1.5% monthly churn, ₹250 acquisition cost</td></tr>
+<tr><td>Opening cash</td><td>₹0</td></tr>
+</tbody></table></div>
+<h2 id="financials">8. Financial projections (base case)</h2>
+<p>The base case burns ₹15.4 crore cumulatively before turning EBITDA-positive in month 40. Revenue grows from ₹2.3 crore to ₹137.5 crore over five years.</p>
+<div class="scroll"><table class=""><thead><tr><th>₹ crore</th><th class=r>Year 1</th><th class=r>Year 2</th><th class=r>Year 3</th><th class=r>Year 4</th><th class=r>Year 5</th></tr></thead><tbody>
+<tr><td>Subscription revenue</td><td class="r">1.9</td><td class="r">10.3</td><td class="r">28.9</td><td class="r">59.5</td><td class="r">102.3</td></tr>
+<tr><td>Medicine margin</td><td class="r">0.3</td><td class="r">1.6</td><td class="r">4.4</td><td class="r">9.2</td><td class="r">15.7</td></tr>
+<tr><td>Diagnostics margin</td><td class="r">0.2</td><td class="r">1.0</td><td class="r">2.9</td><td class="r">5.9</td><td class="r">10.2</td></tr>
+<tr><td>Employer / insurer revenue</td><td class="r">0.0</td><td class="r">0.7</td><td class="r">2.5</td><td class="r">5.2</td><td class="r">9.3</td></tr>
+<tr><td><b>Total revenue</b></td><td class="r"><b>2.3</b></td><td class="r"><b>13.6</b></td><td class="r"><b>38.7</b></td><td class="r"><b>79.7</b></td><td class="r"><b>137.5</b></td></tr>
+<tr><td>Revenue growth</td><td class="r">n/a</td><td class="r">484%</td><td class="r">184%</td><td class="r">106%</td><td class="r">72%</td></tr>
+<tr><td>Variable costs</td><td class="r neg">(1.0)</td><td class="r neg">(5.9)</td><td class="r neg">(16.8)</td><td class="r neg">(34.5)</td><td class="r neg">(59.5)</td></tr>
+<tr><td><b>Contribution</b></td><td class="r"><b>1.3</b></td><td class="r"><b>7.7</b></td><td class="r"><b>22.0</b></td><td class="r"><b>45.2</b></td><td class="r"><b>77.9</b></td></tr>
+<tr><td>Marketing (CAC)</td><td class="r neg">(2.2)</td><td class="r neg">(6.2)</td><td class="r neg">(11.4)</td><td class="r neg">(17.3)</td><td class="r neg">(22.9)</td></tr>
+<tr><td>Device kits</td><td class="r neg">(1.3)</td><td class="r neg">(4.2)</td><td class="r neg">(8.5)</td><td class="r neg">(13.9)</td><td class="r neg">(19.6)</td></tr>
+<tr><td>Employer acquisition</td><td class="r">0.0</td><td class="r neg">(0.1)</td><td class="r neg">(0.2)</td><td class="r neg">(0.3)</td><td class="r neg">(0.5)</td></tr>
+<tr><td>Fixed opex</td><td class="r neg">(1.7)</td><td class="r neg">(3.6)</td><td class="r neg">(6.6)</td><td class="r neg">(10.2)</td><td class="r neg">(14.4)</td></tr>
+<tr><td><b>EBITDA</b></td><td class="r neg"><b>(3.8)</b></td><td class="r neg"><b>(6.4)</b></td><td class="r neg"><b>(4.7)</b></td><td class="r"><b>3.5</b></td><td class="r"><b>20.6</b></td></tr>
+<tr><td>EBITDA margin</td><td class="r neg">−164%</td><td class="r neg">−47%</td><td class="r neg">−12%</td><td class="r">4%</td><td class="r">15%</td></tr>
+<tr><td>Paid B2C members, year end</td><td class="r">8,684</td><td class="r">32,469</td><td class="r">77,621</td><td class="r">145,530</td><td class="r">235,370</td></tr>
+<tr><td>Employer / insurer members, year end</td><td class="r">0</td><td class="r">4,183</td><td class="r">10,187</td><td class="r">19,219</td><td class="r">33,199</td></tr>
+<tr><td>Year-end ARR</td><td class="r">5.5</td><td class="r">22.5</td><td class="r">54.6</td><td class="r">103.1</td><td class="r">168.4</td></tr>
+<tr><td>Equity raised</td><td class="r">30.0</td><td class="r">0.0</td><td class="r">0.0</td><td class="r">0.0</td><td class="r">0.0</td></tr>
+<tr><td>Closing cash</td><td class="r">26.2</td><td class="r">19.8</td><td class="r">15.0</td><td class="r">18.6</td><td class="r">39.2</td></tr>
+</tbody></table></div>
+<figure><svg viewBox="0 0 680 330" role="img" aria-label="Revenue by stream, base case" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<rect x="58" y="10" width="12" height="12" fill="#2563eb" rx="2"/>
+<text x="75" y="20" font-size="12" fill="#1a1a1a">Subscription</text>
+<rect x="165.2" y="10" width="12" height="12" fill="#0d9488" rx="2"/>
+<text x="182.2" y="20" font-size="12" fill="#1a1a1a">Medicine</text>
+<rect x="246.0" y="10" width="12" height="12" fill="#d97706" rx="2"/>
+<text x="263.0" y="20" font-size="12" fill="#1a1a1a">Diagnostics</text>
+<rect x="346.6" y="10" width="12" height="12" fill="#7c3aed" rx="2"/>
+<text x="363.6" y="20" font-size="12" fill="#1a1a1a">Employer / insurer</text>
+<line x1="58" x2="666" y1="290.0" y2="290.0" stroke="#e2e2e2"/>
+<text x="50" y="294.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="206.7" y2="206.7" stroke="#e2e2e2"/>
+<text x="50" y="210.7" font-size="11" text-anchor="end" fill="#555555">50</text>
+<line x1="58" x2="666" y1="123.3" y2="123.3" stroke="#e2e2e2"/>
+<text x="50" y="127.3" font-size="11" text-anchor="end" fill="#555555">100</text>
+<line x1="58" x2="666" y1="40.0" y2="40.0" stroke="#e2e2e2"/>
+<text x="50" y="44.0" font-size="11" text-anchor="end" fill="#555555">150</text>
+<line x1="58" x2="666" y1="290.0" y2="290.0" stroke="#8a8a8a"/>
+<text x="118.8" y="308" font-size="12" text-anchor="middle" fill="#1a1a1a">Y1</text>
+<rect x="88.4" y="286.9" width="60.8" height="3.1" fill="#2563eb" rx="2"/>
+<rect x="88.4" y="286.4" width="60.8" height="0.5" fill="#0d9488" rx="2"/>
+<rect x="88.4" y="286.1" width="60.8" height="0.5" fill="#d97706" rx="2"/>
+<text x="118.8" y="280.1" font-size="11" text-anchor="middle" fill="#1a1a1a" font-weight="700">2.3</text>
+<text x="240.4" y="308" font-size="12" text-anchor="middle" fill="#1a1a1a">Y2</text>
+<rect x="210.0" y="272.8" width="60.8" height="17.2" fill="#2563eb" rx="2"/>
+<rect x="210.0" y="270.2" width="60.8" height="2.6" fill="#0d9488" rx="2"/>
+<rect x="210.0" y="268.4" width="60.8" height="1.7" fill="#d97706" rx="2"/>
+<rect x="210.0" y="267.3" width="60.8" height="1.2" fill="#7c3aed" rx="2"/>
+<text x="240.4" y="261.3" font-size="11" text-anchor="middle" fill="#1a1a1a" font-weight="700">13.6</text>
+<text x="362.0" y="308" font-size="12" text-anchor="middle" fill="#1a1a1a">Y3</text>
+<rect x="331.6" y="241.9" width="60.8" height="48.1" fill="#2563eb" rx="2"/>
+<rect x="331.6" y="234.5" width="60.8" height="7.4" fill="#0d9488" rx="2"/>
+<rect x="331.6" y="229.7" width="60.8" height="4.8" fill="#d97706" rx="2"/>
+<rect x="331.6" y="225.5" width="60.8" height="4.2" fill="#7c3aed" rx="2"/>
+<text x="362.0" y="219.5" font-size="11" text-anchor="middle" fill="#1a1a1a" font-weight="700">38.7</text>
+<text x="483.6" y="308" font-size="12" text-anchor="middle" fill="#1a1a1a">Y4</text>
+<rect x="453.2" y="190.9" width="60.8" height="99.1" fill="#2563eb" rx="2"/>
+<rect x="453.2" y="175.6" width="60.8" height="15.3" fill="#0d9488" rx="2"/>
+<rect x="453.2" y="165.7" width="60.8" height="9.9" fill="#d97706" rx="2"/>
+<rect x="453.2" y="157.1" width="60.8" height="8.6" fill="#7c3aed" rx="2"/>
+<text x="483.6" y="151.1" font-size="11" text-anchor="middle" fill="#1a1a1a" font-weight="700">79.7</text>
+<text x="605.2" y="308" font-size="12" text-anchor="middle" fill="#1a1a1a">Y5</text>
+<rect x="574.8" y="119.6" width="60.8" height="170.4" fill="#2563eb" rx="2"/>
+<rect x="574.8" y="93.3" width="60.8" height="26.2" fill="#0d9488" rx="2"/>
+<rect x="574.8" y="76.3" width="60.8" height="17.0" fill="#d97706" rx="2"/>
+<rect x="574.8" y="60.9" width="60.8" height="15.4" fill="#7c3aed" rx="2"/>
+<text x="605.2" y="54.9" font-size="11" text-anchor="middle" fill="#1a1a1a" font-weight="700">137.5</text>
+</svg><figcaption>Figure 4. Revenue by stream, ₹ crore. Subscription stays about three-quarters of revenue.</figcaption></figure>
+<figure><svg viewBox="0 0 680 300" role="img" aria-label="Paid B2C members at year end" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<line x1="58" x2="666" y1="260.0" y2="260.0" stroke="#e2e2e2"/>
+<text x="50" y="264.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="216.0" y2="216.0" stroke="#e2e2e2"/>
+<text x="50" y="220.0" font-size="11" text-anchor="end" fill="#555555">50,000</text>
+<line x1="58" x2="666" y1="172.0" y2="172.0" stroke="#e2e2e2"/>
+<text x="50" y="176.0" font-size="11" text-anchor="end" fill="#555555">100,000</text>
+<line x1="58" x2="666" y1="128.0" y2="128.0" stroke="#e2e2e2"/>
+<text x="50" y="132.0" font-size="11" text-anchor="end" fill="#555555">150,000</text>
+<line x1="58" x2="666" y1="84.0" y2="84.0" stroke="#e2e2e2"/>
+<text x="50" y="88.0" font-size="11" text-anchor="end" fill="#555555">200,000</text>
+<line x1="58" x2="666" y1="40.0" y2="40.0" stroke="#e2e2e2"/>
+<text x="50" y="44.0" font-size="11" text-anchor="end" fill="#555555">250,000</text>
+<line x1="58" x2="666" y1="260.0" y2="260.0" stroke="#8a8a8a"/>
+<text x="118.8" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y1</text>
+<rect x="75.0" y="252.4" width="85.6" height="7.6" fill="#2563eb" rx="2"/>
+<text x="117.8" y="247.4" font-size="11" text-anchor="middle" fill="#1a1a1a">8,684</text>
+<text x="240.4" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y2</text>
+<rect x="196.6" y="231.4" width="85.6" height="28.6" fill="#2563eb" rx="2"/>
+<text x="239.4" y="226.4" font-size="11" text-anchor="middle" fill="#1a1a1a">32,469</text>
+<text x="362.0" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y3</text>
+<rect x="318.2" y="191.7" width="85.6" height="68.3" fill="#2563eb" rx="2"/>
+<text x="361.0" y="186.7" font-size="11" text-anchor="middle" fill="#1a1a1a">77,621</text>
+<text x="483.6" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y4</text>
+<rect x="439.8" y="131.9" width="85.6" height="128.1" fill="#2563eb" rx="2"/>
+<text x="482.6" y="126.9" font-size="11" text-anchor="middle" fill="#1a1a1a">145,530</text>
+<text x="605.2" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y5</text>
+<rect x="561.4" y="52.9" width="85.6" height="207.1" fill="#2563eb" rx="2"/>
+<text x="604.2" y="47.9" font-size="11" text-anchor="middle" fill="#1a1a1a">235,370</text>
+</svg><figcaption>Figure 5. Paid B2C members at year end.</figcaption></figure>
+<figure><svg viewBox="0 0 680 300" role="img" aria-label="EBITDA by year" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<line x1="58" x2="666" y1="260.0" y2="260.0" stroke="#e2e2e2"/>
+<text x="50" y="264.0" font-size="11" text-anchor="end" fill="#555555">-10</text>
+<line x1="58" x2="666" y1="205.0" y2="205.0" stroke="#e2e2e2"/>
+<text x="50" y="209.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="150.0" y2="150.0" stroke="#e2e2e2"/>
+<text x="50" y="154.0" font-size="11" text-anchor="end" fill="#555555">10</text>
+<line x1="58" x2="666" y1="95.0" y2="95.0" stroke="#e2e2e2"/>
+<text x="50" y="99.0" font-size="11" text-anchor="end" fill="#555555">20</text>
+<line x1="58" x2="666" y1="40.0" y2="40.0" stroke="#e2e2e2"/>
+<text x="50" y="44.0" font-size="11" text-anchor="end" fill="#555555">30</text>
+<line x1="58" x2="666" y1="205.0" y2="205.0" stroke="#8a8a8a"/>
+<text x="118.8" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y1</text>
+<rect x="75.0" y="205.0" width="85.6" height="21.1" fill="#e11d48" rx="2"/>
+<text x="117.8" y="239.1" font-size="11" text-anchor="middle" fill="#1a1a1a">-3.8</text>
+<text x="240.4" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y2</text>
+<rect x="196.6" y="205.0" width="85.6" height="35.0" fill="#e11d48" rx="2"/>
+<text x="239.4" y="253.0" font-size="11" text-anchor="middle" fill="#1a1a1a">-6.4</text>
+<text x="362.0" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y3</text>
+<rect x="318.2" y="205.0" width="85.6" height="26.1" fill="#e11d48" rx="2"/>
+<text x="361.0" y="244.1" font-size="11" text-anchor="middle" fill="#1a1a1a">-4.7</text>
+<text x="483.6" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y4</text>
+<rect x="439.8" y="185.6" width="85.6" height="19.4" fill="#2563eb" rx="2"/>
+<text x="482.6" y="180.6" font-size="11" text-anchor="middle" fill="#1a1a1a">3.5</text>
+<text x="605.2" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Y5</text>
+<rect x="561.4" y="91.6" width="85.6" height="113.4" fill="#2563eb" rx="2"/>
+<text x="604.2" y="86.6" font-size="11" text-anchor="middle" fill="#1a1a1a">20.6</text>
+</svg><figcaption>Figure 6. EBITDA by year, ₹ crore. The business loses money for three years and turns positive in year 4.</figcaption></figure>
+<figure><svg viewBox="0 0 680 300" role="img" aria-label="Cumulative EBITDA by month" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<line x1="58" x2="666" y1="264.0" y2="264.0" stroke="#e2e2e2"/>
+<text x="50" y="268.0" font-size="11" text-anchor="end" fill="#555555">-20</text>
+<line x1="58" x2="666" y1="226.0" y2="226.0" stroke="#e2e2e2"/>
+<text x="50" y="230.0" font-size="11" text-anchor="end" fill="#555555">-15</text>
+<line x1="58" x2="666" y1="188.0" y2="188.0" stroke="#e2e2e2"/>
+<text x="50" y="192.0" font-size="11" text-anchor="end" fill="#555555">-10</text>
+<line x1="58" x2="666" y1="150.0" y2="150.0" stroke="#e2e2e2"/>
+<text x="50" y="154.0" font-size="11" text-anchor="end" fill="#555555">-5</text>
+<line x1="58" x2="666" y1="112.0" y2="112.0" stroke="#e2e2e2"/>
+<text x="50" y="116.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="74.0" y2="74.0" stroke="#e2e2e2"/>
+<text x="50" y="78.0" font-size="11" text-anchor="end" fill="#555555">5</text>
+<line x1="58" x2="666" y1="36.0" y2="36.0" stroke="#e2e2e2"/>
+<text x="50" y="40.0" font-size="11" text-anchor="end" fill="#555555">10</text>
+<line x1="58" x2="666" y1="112.0" y2="112.0" stroke="#8a8a8a"/>
+<line x1="58.0" x2="58.0" y1="109.0" y2="115.0" stroke="#8a8a8a"/>
+<text x="58.0" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M1</text>
+<line x1="171.4" x2="171.4" y1="109.0" y2="115.0" stroke="#8a8a8a"/>
+<text x="171.4" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M12</text>
+<line x1="295.0" x2="295.0" y1="109.0" y2="115.0" stroke="#8a8a8a"/>
+<text x="295.0" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M24</text>
+<line x1="418.7" x2="418.7" y1="109.0" y2="115.0" stroke="#8a8a8a"/>
+<text x="418.7" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M36</text>
+<line x1="542.3" x2="542.3" y1="109.0" y2="115.0" stroke="#8a8a8a"/>
+<text x="542.3" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M48</text>
+<line x1="666.0" x2="666.0" y1="109.0" y2="115.0" stroke="#8a8a8a"/>
+<text x="666.0" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M60</text>
+<polygon points="58.0,112.0 58.0,114.0 68.3,116.0 78.6,118.1 88.9,120.2 99.2,122.4 109.5,124.7 119.8,127.1 130.1,129.6 140.4,132.2 150.7,135.0 161.1,138.0 171.4,141.2 181.7,145.4 192.0,149.5 202.3,153.6 212.6,157.7 222.9,161.7 233.2,165.7 243.5,169.7 253.8,173.6 264.1,177.6 274.4,181.6 284.7,185.6 295.0,189.6 305.3,194.5 315.6,199.1 325.9,203.4 336.2,207.3 346.5,210.8 356.8,214.0 367.2,216.9 377.5,219.4 387.8,221.5 398.1,223.3 408.4,224.7 418.7,225.6 429.0,227.6 439.3,228.9 449.6,229.4 459.9,229.1 470.2,228.1 480.5,226.3 490.8,223.8 501.1,220.4 511.4,216.3 521.7,211.3 532.0,205.5 542.3,198.8 552.6,192.8 562.9,185.5 573.3,177.0 583.6,167.2 593.9,156.1 604.2,143.7 614.5,130.1 624.8,115.2 635.1,98.9 645.4,81.3 655.7,62.4 666.0,42.2 666.0,112.0" fill="#2563eb" fill-opacity="0.16"/>
+<polyline points="58.0,114.0 68.3,116.0 78.6,118.1 88.9,120.2 99.2,122.4 109.5,124.7 119.8,127.1 130.1,129.6 140.4,132.2 150.7,135.0 161.1,138.0 171.4,141.2 181.7,145.4 192.0,149.5 202.3,153.6 212.6,157.7 222.9,161.7 233.2,165.7 243.5,169.7 253.8,173.6 264.1,177.6 274.4,181.6 284.7,185.6 295.0,189.6 305.3,194.5 315.6,199.1 325.9,203.4 336.2,207.3 346.5,210.8 356.8,214.0 367.2,216.9 377.5,219.4 387.8,221.5 398.1,223.3 408.4,224.7 418.7,225.6 429.0,227.6 439.3,228.9 449.6,229.4 459.9,229.1 470.2,228.1 480.5,226.3 490.8,223.8 501.1,220.4 511.4,216.3 521.7,211.3 532.0,205.5 542.3,198.8 552.6,192.8 562.9,185.5 573.3,177.0 583.6,167.2 593.9,156.1 604.2,143.7 614.5,130.1 624.8,115.2 635.1,98.9 645.4,81.3 655.7,62.4 666.0,42.2" fill="none" stroke="#2563eb" stroke-width="2.5" />
+<circle cx="449.6" cy="229.4" r="5" fill="#ffffff" stroke="#d97706" stroke-width="2.5"/>
+<text x="457.6" y="253.4" font-size="12" fill="#1a1a1a">low point: −₹15.4 crore</text>
+</svg><figcaption>Figure 7. Cumulative EBITDA by month, ₹ crore. The low point is about −₹15.4 crore.</figcaption></figure>
+<figure><svg viewBox="0 0 680 300" role="img" aria-label="Closing cash by month" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<line x1="58" x2="666" y1="264.0" y2="264.0" stroke="#e2e2e2"/>
+<text x="50" y="268.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="207.0" y2="207.0" stroke="#e2e2e2"/>
+<text x="50" y="211.0" font-size="11" text-anchor="end" fill="#555555">10</text>
+<line x1="58" x2="666" y1="150.0" y2="150.0" stroke="#e2e2e2"/>
+<text x="50" y="154.0" font-size="11" text-anchor="end" fill="#555555">20</text>
+<line x1="58" x2="666" y1="93.0" y2="93.0" stroke="#e2e2e2"/>
+<text x="50" y="97.0" font-size="11" text-anchor="end" fill="#555555">30</text>
+<line x1="58" x2="666" y1="36.0" y2="36.0" stroke="#e2e2e2"/>
+<text x="50" y="40.0" font-size="11" text-anchor="end" fill="#555555">40</text>
+<line x1="58" x2="666" y1="264.0" y2="264.0" stroke="#8a8a8a"/>
+<line x1="58.0" x2="58.0" y1="261.0" y2="267.0" stroke="#8a8a8a"/>
+<text x="58.0" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M1</text>
+<line x1="171.4" x2="171.4" y1="261.0" y2="267.0" stroke="#8a8a8a"/>
+<text x="171.4" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M12</text>
+<line x1="295.0" x2="295.0" y1="261.0" y2="267.0" stroke="#8a8a8a"/>
+<text x="295.0" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M24</text>
+<line x1="418.7" x2="418.7" y1="261.0" y2="267.0" stroke="#8a8a8a"/>
+<text x="418.7" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M36</text>
+<line x1="542.3" x2="542.3" y1="261.0" y2="267.0" stroke="#8a8a8a"/>
+<text x="542.3" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M48</text>
+<line x1="666.0" x2="666.0" y1="261.0" y2="267.0" stroke="#8a8a8a"/>
+<text x="666.0" y="282" font-size="11" text-anchor="middle" fill="#1a1a1a">M60</text>
+<polygon points="58.0,264.0 58.0,231.3 68.3,232.8 78.6,234.4 88.9,236.0 99.2,237.6 109.5,239.3 119.8,241.1 130.1,243.0 140.4,244.9 150.7,247.0 161.1,249.3 171.4,114.9 181.7,118.0 192.0,121.1 202.3,124.2 212.6,127.3 222.9,130.3 233.2,133.3 243.5,136.3 253.8,139.2 264.1,142.2 274.4,145.2 284.7,148.2 295.0,151.2 305.3,154.9 315.6,158.3 325.9,161.5 336.2,164.4 346.5,167.1 356.8,169.5 367.2,171.7 377.5,173.5 387.8,175.1 398.1,176.5 408.4,177.5 418.7,178.2 429.0,179.7 439.3,180.7 449.6,181.0 459.9,180.9 470.2,180.1 480.5,178.8 490.8,176.8 501.1,174.3 511.4,171.2 521.7,167.5 532.0,163.1 542.3,158.1 552.6,153.6 562.9,148.1 573.3,141.7 583.6,134.4 593.9,126.1 604.2,116.8 614.5,106.6 624.8,95.4 635.1,83.2 645.4,70.0 655.7,55.8 666.0,40.6 666.0,264.0" fill="#2563eb" fill-opacity="0.16"/>
+<polyline points="58.0,231.3 68.3,232.8 78.6,234.4 88.9,236.0 99.2,237.6 109.5,239.3 119.8,241.1 130.1,243.0 140.4,244.9 150.7,247.0 161.1,249.3 171.4,114.9 181.7,118.0 192.0,121.1 202.3,124.2 212.6,127.3 222.9,130.3 233.2,133.3 243.5,136.3 253.8,139.2 264.1,142.2 274.4,145.2 284.7,148.2 295.0,151.2 305.3,154.9 315.6,158.3 325.9,161.5 336.2,164.4 346.5,167.1 356.8,169.5 367.2,171.7 377.5,173.5 387.8,175.1 398.1,176.5 408.4,177.5 418.7,178.2 429.0,179.7 439.3,180.7 449.6,181.0 459.9,180.9 470.2,180.1 480.5,178.8 490.8,176.8 501.1,174.3 511.4,171.2 521.7,167.5 532.0,163.1 542.3,158.1 552.6,153.6 562.9,148.1 573.3,141.7 583.6,134.4 593.9,126.1 604.2,116.8 614.5,106.6 624.8,95.4 635.1,83.2 645.4,70.0 655.7,55.8 666.0,40.6" fill="none" stroke="#2563eb" stroke-width="2.5" />
+<circle cx="161.1" cy="249.3" r="5" fill="#ffffff" stroke="#d97706" stroke-width="2.5"/>
+<text x="169.1" y="271.3" font-size="12" fill="#1a1a1a">low: ₹2.6 crore</text>
+</svg><figcaption>Figure 8. Closing cash by month, ₹ crore. Cash dips to about ₹2.6 crore in month 11, just before the Series A arrives in month 12.</figcaption></figure>
+<h2 id="scenarios">9. Scenarios</h2>
+<p>The model runs three scenarios from a single switch that moves four levers together.</p>
+<div class="scroll"><table class=""><thead><tr><th>Lever</th><th class=r>Downside</th><th class=r>Base</th><th class=r>Upside</th></tr></thead><tbody>
+<tr><td>CAC</td><td class="r">+25%</td><td class="r">as assumed</td><td class="r neg">−10%</td></tr>
+<tr><td>Churn</td><td class="r">+25%</td><td class="r">as assumed</td><td class="r neg">−15%</td></tr>
+<tr><td>New-member growth</td><td class="r neg">−15%</td><td class="r">as assumed</td><td class="r">+10%</td></tr>
+<tr><td>Price</td><td class="r neg">−5%</td><td class="r">as assumed</td><td class="r">+5%</td></tr>
+</tbody></table></div>
+<div class="scroll"><table class=""><thead><tr><th>Result</th><th class=r>Downside</th><th class=r>Base</th><th class=r>Upside</th></tr></thead><tbody>
+<tr><td>Year-3 revenue (₹ crore)</td><td class="r">25.6</td><td class="r">38.7</td><td class="r">51.5</td></tr>
+<tr><td>Year-5 revenue (₹ crore)</td><td class="r">79.7</td><td class="r">137.5</td><td class="r">200.8</td></tr>
+<tr><td>Year-5 EBITDA (₹ crore)</td><td class="r">0.1</td><td class="r">20.6</td><td class="r">45.9</td></tr>
+<tr><td>Paid members, month 60</td><td class="r">131,257</td><td class="r">235,370</td><td class="r">343,928</td></tr>
+<tr><td>First EBITDA-positive month</td><td class="r">55</td><td class="r">40</td><td class="r">32</td></tr>
+<tr><td>Peak cumulative burn (₹ crore)</td><td class="r">26.8</td><td class="r">15.4</td><td class="r">11.4</td></tr>
+<tr><td>Lowest closing cash (₹ crore)</td><td class="r">2.3</td><td class="r">2.6</td><td class="r">2.7</td></tr>
+<tr><td>Closing cash, month 60 (₹ crore)</td><td class="r">4.6</td><td class="r">39.2</td><td class="r">80.3</td></tr>
+<tr><td>Year-5 LTV/CAC, undiscounted</td><td class="r">2.5x</td><td class="r">3.7x</td><td class="r">5.0x</td></tr>
+<tr><td>Year-1 CAC payback (months)</td><td class="r">12.4</td><td class="r">10.0</td><td class="r">8.7</td></tr>
+</tbody></table></div>
+<figure><svg viewBox="0 0 680 300" role="img" aria-label="Year-5 revenue and EBITDA by scenario" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<rect x="58" y="10" width="12" height="12" fill="#2563eb" rx="2"/>
+<text x="75" y="20" font-size="12" fill="#1a1a1a">Year-5 revenue</text>
+<rect x="178.39999999999998" y="10" width="12" height="12" fill="#0d9488" rx="2"/>
+<text x="195.39999999999998" y="20" font-size="12" fill="#1a1a1a">Year-5 EBITDA</text>
+<line x1="58" x2="666" y1="260.0" y2="260.0" stroke="#e2e2e2"/>
+<text x="50" y="264.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="216.0" y2="216.0" stroke="#e2e2e2"/>
+<text x="50" y="220.0" font-size="11" text-anchor="end" fill="#555555">50</text>
+<line x1="58" x2="666" y1="172.0" y2="172.0" stroke="#e2e2e2"/>
+<text x="50" y="176.0" font-size="11" text-anchor="end" fill="#555555">100</text>
+<line x1="58" x2="666" y1="128.0" y2="128.0" stroke="#e2e2e2"/>
+<text x="50" y="132.0" font-size="11" text-anchor="end" fill="#555555">150</text>
+<line x1="58" x2="666" y1="84.0" y2="84.0" stroke="#e2e2e2"/>
+<text x="50" y="88.0" font-size="11" text-anchor="end" fill="#555555">200</text>
+<line x1="58" x2="666" y1="40.0" y2="40.0" stroke="#e2e2e2"/>
+<text x="50" y="44.0" font-size="11" text-anchor="end" fill="#555555">250</text>
+<line x1="58" x2="666" y1="260.0" y2="260.0" stroke="#8a8a8a"/>
+<text x="159.3" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Downside</text>
+<rect x="86.4" y="189.8" width="71.0" height="70.2" fill="#2563eb" rx="2"/>
+<text x="121.9" y="184.8" font-size="11" text-anchor="middle" fill="#1a1a1a">79.7</text>
+<rect x="159.3" y="259.9" width="71.0" height="0.5" fill="#0d9488" rx="2"/>
+<text x="194.8" y="254.9" font-size="11" text-anchor="middle" fill="#1a1a1a">0.1</text>
+<text x="362.0" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Base</text>
+<rect x="289.0" y="139.0" width="71.0" height="121.0" fill="#2563eb" rx="2"/>
+<text x="324.5" y="134.0" font-size="11" text-anchor="middle" fill="#1a1a1a">137.5</text>
+<rect x="362.0" y="241.9" width="71.0" height="18.1" fill="#0d9488" rx="2"/>
+<text x="397.5" y="236.9" font-size="11" text-anchor="middle" fill="#1a1a1a">20.6</text>
+<text x="564.7" y="278" font-size="12" text-anchor="middle" fill="#1a1a1a">Upside</text>
+<rect x="491.7" y="83.3" width="71.0" height="176.7" fill="#2563eb" rx="2"/>
+<text x="527.2" y="78.3" font-size="11" text-anchor="middle" fill="#1a1a1a">200.8</text>
+<rect x="564.7" y="219.6" width="71.0" height="40.4" fill="#0d9488" rx="2"/>
+<text x="600.1" y="214.6" font-size="11" text-anchor="middle" fill="#1a1a1a">45.9</text>
+</svg><figcaption>Figure 9. Year-5 revenue and EBITDA by scenario, ₹ crore.</figcaption></figure>
+<figure><svg viewBox="0 0 680 280" role="img" aria-label="Peak cumulative burn by scenario" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<line x1="58" x2="666" y1="240.0" y2="240.0" stroke="#e2e2e2"/>
+<text x="50" y="244.0" font-size="11" text-anchor="end" fill="#555555">0</text>
+<line x1="58" x2="666" y1="173.3" y2="173.3" stroke="#e2e2e2"/>
+<text x="50" y="177.3" font-size="11" text-anchor="end" fill="#555555">10</text>
+<line x1="58" x2="666" y1="106.7" y2="106.7" stroke="#e2e2e2"/>
+<text x="50" y="110.7" font-size="11" text-anchor="end" fill="#555555">20</text>
+<line x1="58" x2="666" y1="40.0" y2="40.0" stroke="#e2e2e2"/>
+<text x="50" y="44.0" font-size="11" text-anchor="end" fill="#555555">30</text>
+<line x1="58" x2="666" y1="240.0" y2="240.0" stroke="#8a8a8a"/>
+<text x="159.3" y="258" font-size="12" text-anchor="middle" fill="#1a1a1a">Downside</text>
+<rect x="86.4" y="61.2" width="143.9" height="178.8" fill="#d97706" rx="2"/>
+<text x="158.3" y="56.2" font-size="11" text-anchor="middle" fill="#1a1a1a">26.8</text>
+<text x="362.0" y="258" font-size="12" text-anchor="middle" fill="#1a1a1a">Base</text>
+<rect x="289.0" y="137.0" width="143.9" height="103.0" fill="#d97706" rx="2"/>
+<text x="361.0" y="132.0" font-size="11" text-anchor="middle" fill="#1a1a1a">15.4</text>
+<text x="564.7" y="258" font-size="12" text-anchor="middle" fill="#1a1a1a">Upside</text>
+<rect x="491.7" y="164.2" width="143.9" height="75.8" fill="#d97706" rx="2"/>
+<text x="563.7" y="159.2" font-size="11" text-anchor="middle" fill="#1a1a1a">11.4</text>
+</svg><figcaption>Figure 10. Peak cumulative burn by scenario, ₹ crore. The downside needs far more cash than the base case, and almost all of the ₹30 crore.</figcaption></figure>
+<h2 id="funding">10. Funding needs</h2>
+<div class="scroll"><table class=""><thead><tr><th>Round</th><th class=r>Month</th><th class=r>Amount (₹ crore)</th><th class=r>Post-money (₹ crore)</th><th class=r>Dilution</th><th class=r>Founders and ESOP after</th></tr></thead><tbody>
+<tr><td>Seed</td><td class="r">1</td><td class="r">6</td><td class="r">24</td><td class="r">25%</td><td class="r">75%</td></tr>
+<tr><td>Series A</td><td class="r">12</td><td class="r">24</td><td class="r">120</td><td class="r">20%</td><td class="r">60%</td></tr>
+<tr><td><b>Total</b></td><td class="r"></td><td class="r"><b>30</b></td><td class="r"></td><td class="r"></td><td class="r"></td></tr>
+</tbody></table></div>
+<svg viewBox="0 0 680 206" role="img" aria-label="Use of funds" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<text x="290" y="27" font-size="13" text-anchor="end" fill="#1a1a1a">Customer acquisition and device kits</text>
+<rect x="300" y="12" width="320.0" height="22" fill="#2563eb" rx="3"/>
+<text x="628.0" y="28" font-size="13" fill="#1a1a1a">38%</text>
+<text x="290" y="65" font-size="13" text-anchor="end" fill="#1a1a1a">Clinical network, coaches, care operations</text>
+<rect x="300" y="50" width="202.1" height="22" fill="#0d9488" rx="3"/>
+<text x="510.1" y="66" font-size="13" fill="#1a1a1a">24%</text>
+<text x="290" y="103" font-size="13" text-anchor="end" fill="#1a1a1a">Product, AI and data engineering</text>
+<rect x="300" y="88" width="185.3" height="22" fill="#d97706" rx="3"/>
+<text x="493.3" y="104" font-size="13" fill="#1a1a1a">22%</text>
+<text x="290" y="141" font-size="13" text-anchor="end" fill="#1a1a1a">Pharmacy, diagnostics supply chain, compliance</text>
+<rect x="300" y="126" width="75.8" height="22" fill="#7c3aed" rx="3"/>
+<text x="383.8" y="142" font-size="13" fill="#1a1a1a">9%</text>
+<text x="290" y="179" font-size="13" text-anchor="end" fill="#1a1a1a">G&amp;A and contingency</text>
+<rect x="300" y="164" width="58.9" height="22" fill="#2563eb" rx="3"/>
+<text x="366.9" y="180" font-size="13" fill="#1a1a1a">7%</text>
+</svg>
+<p class="note" style="margin-top:6px">Figure 11. Use of the ₹30 crore, % of the raise.</p>
+<div class="scroll"><table class=""><thead><tr><th>Funding metric (base case)</th><th class=r>Value</th></tr></thead><tbody>
+<tr><td>Peak cumulative EBITDA burn</td><td class="r">₹15.4 crore</td></tr>
+<tr><td>Lowest closing cash</td><td class="r">₹2.6 crore, in month 11</td></tr>
+<tr><td>First EBITDA-positive month</td><td class="r">40</td></tr>
+<tr><td>Closing cash, month 60</td><td class="r">₹39.2 crore</td></tr>
+</tbody></table></div>
+<div class="box"><p><b>Cautions:</b> cash is tightest just before the Series A, so the round must close on time or spending must slow. The downside case barely survives on the full ₹30 crore. Valuations and round sizes are the author's assumptions, not market quotes, and pharmacy working capital is not modelled.</p></div>
+<h2 id="risks">11. Risks, milestones and what to validate</h2>
+<div class="scroll"><table class=""><thead><tr><th>Risk</th><th>Why it matters</th><th>Mitigation</th></tr></thead><tbody>
+<tr><td>Churn stays above 5% a month</td><td>Year-1 LTV/CAC is already only 1.7x; the downside case adds 25% to churn</td><td>Coach-led onboarding, family plans, annual prepay option, track 90-day retention first</td></tr>
+<tr><td>CAC higher than ₹2,000</td><td>Marketing and kits are 40%+ of cost in years 1-3</td><td>Pharmacy and camp channels, referral credits, cut the kit subsidy if payback exceeds 12 months</td></tr>
+<tr><td>Clinical safety or liability</td><td>A missed escalation harms a patient and the brand</td><td>Doctor-led protocols, AI limited to flagging, audit of escalations, appropriate insurance</td></tr>
+<tr><td>Data privacy and regulation</td><td>Sensitive health data, telemedicine and e-pharmacy rules</td><td>Consent-first design, legal review before launch</td></tr>
+<tr><td>Large platforms copy the model</td><td>Funded competitors already serve chronic care</td><td>Regional depth, vernacular coaching, retention data as the moat</td></tr>
+<tr><td>Employer and insurer sales are slow</td><td>B2B is only 7% of year-5 revenue, so the plan survives without it</td><td>Treat B2B as upside until two paying pilots are signed</td></tr>
+</tbody></table></div>
+<p>Milestones to earn the Series A by month 12:</p><ul><li>8,700 paid members across the pilot towns</li><li>Monthly churn trending toward 5%</li><li>Marketing CAC at or below ₹2,000 and payback near 10 months</li><li>Two employer or insurer pilots in discussion</li></ul>
+<p>Before this goes to investors, validate with real customers the ₹450 blended price, the 55% medicine attach rate, the 300 members per coach ratio and the 6% year-1 churn, then replace those inputs and re-run the model.</p>
+<h2 id="sources">12. Sources</h2><ul>
+<li><a href="https://www.cxotoday.com/press-release/digital-disease-management-to-solve-indias-chronic-health-crisis-redseer/">Redseer via CXOToday: chronic disease TAM</a></li>
+<li><a href="https://www.kenresearch.com/india-digital-therapeutics-market">Ken Research: India digital therapeutics market</a></li>
+<li><a href="https://www.imarcgroup.com/india-telehealth-market">IMARC: India telehealth market</a></li>
+<li><a href="https://www.freepressjournal.in/amp/latest-news/indias-e-pharmacy-sector-expands-as-patients-shift-to-affordable-value-driven-medicines">Free Press Journal: Truemeds funding</a></li>
+<li><a href="https://dealroom.co/news/154020-disha-formerly-curelink-raises-4-6m-series-a-led-by-general-catalyst/">Dealroom: Disha (formerly Curelink) Series A</a></li>
+<li><a href="https://www.thereportcubes.com/public/report-store/telemedicine-market-india">Report Cubes: India telemedicine market (Practo, Apollo 24x7)</a></li>
+</ul><p class="note">Sources were read as search-result excerpts on 17 November 2026. Open the originals to confirm before external use.</p>
+</main></body></html>
